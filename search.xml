@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>（文章标题）</title>
+      <link href="/posts/db3ef1dd.html"/>
+      <url>/posts/db3ef1dd.html</url>
+      
+        <content type="html"><![CDATA[<p>## 目录</p><p>&amp;lt;!– 自动生成：VS Code 插件 “Markdown All in One” 支持 <code>Ctrl+Shift+P → Create Table of Contents</code> –&amp;gt;</p><p>&amp;lt;!– 或者手动维护 –&amp;gt;</p><p>- [背景](#背景)</p><p>- [思路](#思路)</p><p>- [实现](#实现)</p><p>- [踩坑记录](#踩坑记录)</p><p>- [总结](#总结)</p><p>## 背景</p><p>（为什么要做这件事？）</p><p>## 思路</p><p>（一句话总体思路，可配架构图）</p><pre><code class="mermaid">graph TD&amp;nbsp;   A\[输入] --\&amp;gt; B&#123;条件&#125;&amp;nbsp;   B --\&amp;gt;|真| C\[方案1]&amp;nbsp;   B --\&amp;gt;|假| D\[方案2]</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> &#92;[tag1, tag2] </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/posts/16107.html"/>
       <url>/posts/16107.html</url>
