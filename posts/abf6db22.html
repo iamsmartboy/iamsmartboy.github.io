@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+      <link rel="icon" href="img/bitbug_favicon.ico">
+    
+    <meta name="keyword"  content="">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+
+  <div class="page">
+    <div class="head">
+      <header class="head-header">
+  <h1 class="head-authorH">
+    <a href="/" class="head-authorLink">
+      敏感小耗子&#39;s 博客</a>
+  </h1>
+  <div class="head-right">
+    <!-- <div class="head-search">
+      <input class="head-searchK"></input>
+      <span class="head-searchT">
+        </span>
+    </div> -->
+    <button class="barWrap" id="barWrap-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="head-about" id="head-about">
+      
+      <a class="head-aboutLink" href="/about">
+        About</a>
+      
+    </div>
+  </div>
+</header>
+    </div>
+    <div class="main">
+        <div class="barShow-head" id="barShow">
+  <ul class="barShow-ul">
+    
+      <li class="barShow-item">
+        <a href="/archives"><span>
+            Archives</span></a>
+      </li>
+    
+      <li class="barShow-item">
+        <a href="/tags"><span>
+            Tags</span></a>
+      </li>
+    
+    
+      <li class="barShow-item">
+        <a class="head-aboutLink" href="/about">
+          About
+        </a>
+      </li>
+    
+  </ul>
+</div>
+      <article class="post" id="post">
+  <header class="post-head">
+    <h1 class="post-title">
+      <a class="title" href="/posts/abf6db22.html">
+        深度学习-动手学 笔记 第一章
+      </a>
+    </h1>
+  </header>
+  <div class="post-datetag">
+    <div class="post-date">
+      <time class="post-time" title="2025-09-15 14:51:02" datetime="2025-09-15T06:51:02.915Z" itemprop="datePublished">
+  2025-09-15</time>
+    </div>
+    <div class="post-tag">
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Deep-Learning/" rel="tag">Deep Learning</a></li></ul>
+
+    </div>
+  </div>
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>说明：本来并不准备写这一章的笔记，但我看完了书本上的这一章后，发现还是对深度学习有了更好的了解</p>
+<h2 id="一、机器学习的简单示例"><a href="#一、机器学习的简单示例" class="headerlink" title="一、机器学习的简单示例"></a>一、机器学习的简单示例</h2><p>书中用了一个看起来简单的唤醒程序来引入机器学习的过程，在开始机器学习前必须精确的定义问题，确定好输入和输出的性质，机器学习是一种数据编程——通过数据集来确定程序的行为</p>
+<h2 id="二、机器学习关键组件"><a href="#二、机器学习关键组件" class="headerlink" title="二、机器学习关键组件"></a>二、机器学习关键组件</h2><p>所有机器学习都一定有这些组件</p>
+<p><strong>1.数据</strong><br>用于训练模型，每个数据集由一个个样本构成，每个样本由一组特征和协变量的属性组成</p>
+<p>标签或目标：在监督学习中用于预测的特殊属性</p>
+<p>维度：样本特征向量的长度</p>
+<p>训练后模型的性能和数据集有着很大的关系</p>
+<p><strong>2.模型</strong><br>通过学习数据中的模式和规律来做出预测或决策的系统，模型通常由一系列参数和结构组成，这些参数在训练过程中被优化</p>
+<p><strong>3.目标函数</strong><br>目标函数用于对模型优劣程度的度量，在处理不同问题时使用的损失函数不同</p>
+<p><strong>4.优化算法</strong><br>用于调整模型里的参数来优化目标函数的算法</p>
+<h2 id="三、监督学习"><a href="#三、监督学习" class="headerlink" title="三、监督学习"></a>三、监督学习</h2><p>通过使用带有标签的训练数据来训练模型，使模型能够学习输入特征与输出标签之间的映射关系，模型的目标是通过对训练数据的学习，泛化到新的、未见过的数据上，并准确地预测其对应的输出标签</p>
+<p><strong>1.回归</strong><br>当标签是一个数值，需要模型输出一个数值，关于有多少的问题</p>
+<p><strong>2.分类</strong><br>回答哪一个的问题，一个样本输出一个类别</p>
+<p><strong>3.标注问题</strong><br>学习预测不互相排斥的类别问题，一个样本可以输出多个类别</p>
+<p><strong>4.搜索</strong><br>不仅需要输出可能的结果，还需要对结果进行更优异的排序显示</p>
+<p><strong>5.推荐系统</strong><br>对不同的用户，根据他们的个性进行推荐，即使输入相同，输出也能够进行不同的个性化改变</p>
+<p><strong>6.序列学习</strong><br>可以处理输入连续的情况，模型具有记忆能力，能够找出连续情况的前后联系</p>
+<h2 id="四、强化学习"><a href="#四、强化学习" class="headerlink" title="四、强化学习"></a>四、强化学习</h2><p>模型能够与环境进行交互，强化学习框架通用性高，可以将所有监督学习问题转化为强化学习</p>
+
+    
+  </div>
+</article>
+
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%80%E3%80%81%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、机器学习的简单示例</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BA%8C%E3%80%81%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%B3%E9%94%AE%E7%BB%84%E4%BB%B6"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、机器学习关键组件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%89%E3%80%81%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、监督学习</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9B%9B%E3%80%81%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0"><span class="post-toc-number">4.</span> <span class="post-toc-text">四、强化学习</span></a></li></ol>
+        </nav>
+    </aside>
+   
+    </div>
+    <footer class="footer-nav">
+      
+  <span class="footer-msg">
+    
+    
+    
+    <span class="timeDivide">-</span>
+    
+    小苏.&nbsp;
+    Power by
+    <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>
+    and
+    <a class="orangelink" href="https://github.com/" target="_blank" rel="">
+      orange</a>
+  </span>
+
+    </footer>
+    <div class="back-top" id="back-top">
+      <i class="back-top-icon"></i>
+    </div>
+    
+  
+  <script src="/js/jquery/jquery-3.1.1.min.js"></script>
+
+    
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/index.js"></script>
+
+  
+  </div>
+</body>
