@@ -13,7 +13,7 @@ readTime: 1 MIN READ
 
 因此我就利用AI搭建出一个网站，开始我的第一步同时记录接下来的脚步
 
-![使用 AI 搭建个人网站的工作流](图片/ai-project-workflow.avif)
+![使用 AI 搭建个人网站的工作流](图片/first-ai-project-home.webp)
 
 ## 项目介绍
 
