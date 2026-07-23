@@ -3,7 +3,7 @@ title: 开始我的第一个AI项目
 date: 2026-07-23
 category: AI 实验
 excerpt: 不再局限于聊天框，而是实际落地出发，借助构建我的个人网站。
-cover: 图片/first-ai-project-home.webp
+cover: 图片/ai-project-workflow.avif
 readTime: 1 MIN READ
 ---
 
@@ -13,7 +13,7 @@ readTime: 1 MIN READ
 
 因此我就利用AI搭建出一个网站，开始我的第一步同时记录接下来的脚步
 
-![敏感小耗子个人网站首页](图片/first-ai-project-home.webp)
+![使用 AI 搭建个人网站的工作流](图片/ai-project-workflow.avif)
 
 ## 项目介绍
 
@@ -22,4 +22,3 @@ readTime: 1 MIN READ
 ## 阶段结论
 
 这个网站的落地让我更加的坚信AI已经成为了十分强大的工具，学会使用AI是未来不可或缺的技能，感谢AI，我对实现小时候的梦想——成为一个独立游戏制作者充满了信心！
-
