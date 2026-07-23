@@ -1,4 +1,18 @@
 const modules = import.meta.glob('./posts/*.md', { eager: true, query: '?raw', import: 'default' })
+const imageModules = import.meta.glob('./posts/图片/*.{png,jpg,jpeg,webp,gif}', { eager: true, query: '?url', import: 'default' })
+
+const imageUrls = Object.fromEntries(
+  Object.entries(imageModules).map(([path, url]) => [path.replace('./posts/', ''), url]),
+)
+
+function resolveImagePath(path) {
+  const normalized = path.replaceAll('\\', '/').replace(/^\.?\//, '')
+  return imageUrls[normalized] || path
+}
+
+function resolveMarkdownImages(body) {
+  return body.replace(/(!\[[^\]]*\]\()([^)]+)(\))/g, (_, start, path, end) => `${start}${resolveImagePath(path)}${end}`)
+}
 
 function parseFrontmatter(raw, path) {
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/)
@@ -9,10 +23,11 @@ function parseFrontmatter(raw, path) {
       if (separator > -1) data[line.slice(0, separator).trim()] = line.slice(separator + 1).trim().replace(/^['"]|['"]$/g, '')
     })
   }
+  if (data.cover) data.cover = resolveImagePath(data.cover)
   return {
     slug: path.split('/').pop().replace('.md', ''),
     ...data,
-    body: match ? match[2] : raw,
+    body: resolveMarkdownImages(match ? match[2] : raw),
   }
 }
 
