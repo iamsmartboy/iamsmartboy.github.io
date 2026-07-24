@@ -127,7 +127,9 @@ function HomePage() {
     <section className="about section shell" id="about">
       <header className="section-head"><span>01 / ABOUT</span><p>关于我</p></header>
       <div className="about-grid">
-        <div className="portrait" role="img" aria-label="个人头像占位图"><div className="portrait-noise"/><span>YOUR<br/>PORTRAIT</span><small>替换为你的照片</small></div>
+        <figure className="portrait">
+          <img src="/images/about-portrait.jpg" alt="敏感小耗子的个人照片" loading="lazy"/>
+        </figure>
         <div className="about-copy">
           <p className="lead section-motion-title">你好，我是敏感小耗子<sup>*</sup>。<br/>一个在<span>研究</span>与<span>创造</span>之间，寻找自己坐标的人。</p>
           <div className="bio-row">
