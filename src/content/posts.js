@@ -1,5 +1,5 @@
 const modules = import.meta.glob('./posts/*.md', { eager: true, query: '?raw', import: 'default' })
-const imageModules = import.meta.glob('./posts/图片/*.{png,jpg,jpeg,webp,avif,gif}', { eager: true, query: '?url', import: 'default' })
+const imageModules = import.meta.glob('./posts/{图片,images}/*.{png,jpg,jpeg,webp,avif,gif}', { eager: true, query: '?url', import: 'default' })
 
 const imageUrls = Object.fromEntries(
   Object.entries(imageModules).map(([path, url]) => [path.replace('./posts/', ''), url]),

@@ -1,6 +1,6 @@
 ---
 title: 保持输出：把学习过程变成公开档案
-date: 2026-06-02
+date: 2026-07-24
 category: 学习札记
 excerpt: 为什么我决定持续记录尚未成熟的思考、实验和失败。
 cover: https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1800&q=85
