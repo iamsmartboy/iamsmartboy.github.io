@@ -3,7 +3,7 @@ title: 简单的记录python的学习
 date: 2026-07-24
 category: 学习札记
 excerpt: 记录能让我知道自己学过了什么，有机会回顾自己的学习历程。
-cover: images/python-hash-table.webp
+cover: 图片/1e7eac2920ec2e01baef2ae736fb44f2a69e405d.jpg@1192w.webp
 readTime: 8 MIN READ
 ---
 
